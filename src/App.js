@@ -1,26 +1,32 @@
 import React from 'react';
 import logo from './logo.svg';
+import { Route } from 'react-router-dom'
+import LandingPage from './routes/LandingPage/LandingPage'
+
 import './App.css';
 
-function App() {
+export default class App extends React.Component {
+  
+mainRoutes (){
+  return (
+    <>
+      <Route 
+      exact
+      key ='/'
+      component = {LandingPage}
+    />
+    </>
+  )
+}
+ 
+render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className = 'App_main'>
+        {this.mainRoutes()}
+      </main>
     </div>
   );
-}
+  }
 
-export default App;
+}
