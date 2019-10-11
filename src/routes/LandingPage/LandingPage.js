@@ -25,7 +25,8 @@ export default class LandingPage extends React.Component {
       <div>
         <header>
           <h1>
-            Welcome to Petful
+            Welcome to <br></br>
+            Petful
           </h1>
         </header>
         <p>
