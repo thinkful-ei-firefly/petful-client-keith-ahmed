@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default class Dogs extends React.Component {
   render(){
     return (

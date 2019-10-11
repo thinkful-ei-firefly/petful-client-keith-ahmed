@@ -35,7 +35,7 @@ export default class LandingPage extends React.Component {
           You'll get their story.<br></br>
           
         </p>
-        
+        <img style ={{width:'50%'}} src = {'https://picfiles.alphacoders.com/277/277517.jpg'} ></img>
         <form onSubmit={e => this.handleSubmit(e)}><label htmlFor="Name">Name:</label> 
         <input placeholder="e.g. John " name="name" id="name"></input>
         <button type="submit">Start</button>
