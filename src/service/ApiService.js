@@ -24,7 +24,7 @@ import config from '../config';
   },
 
   handleUserPost(user){
-    return fetch(`${config.API_ENDPOINT}/adopters`, {
+    return fetch(`${config.API_ENDPOINT}/`, {
       method: 'POST',
       headers:{
         'content-type': 'application/json'
@@ -40,7 +40,7 @@ import config from '../config';
   })
   },
 
-  handleUserDelete(){
+  /*handleUserDelete(){
     return fetch(`${config.API_ENDPOINT}/adopters`, {
       method: 'DELETE',
     })
@@ -49,7 +49,7 @@ import config from '../config';
       return res.json().then(e => Promise.reject(e))
       return res.json()
     })
-  }
+  }*/
 
 }
 
