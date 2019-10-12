@@ -36,7 +36,7 @@
 
 ## User Stories
 
-* USER STORY # 1
+#### USER STORY # 1
 > As a pet lover, I want to go to the FIFO pet adoption site so that I can get more information about the adoption process
 >
 > Acceptance criteria
@@ -45,7 +45,7 @@
 >
 > The site has a description of the adoption process It has a meaningful picture that matches its description A button indicating that I can start the adoption process.
 
-* USER STORY # 2
+#### USER STORY # 2
 >As a user interested in adopting pets, I want to get more information on the pet so that I can make an informed decision
 >
 >Acceptance criteria
@@ -58,7 +58,7 @@
 >* its name, sex, age, and breed; and
 >* a story of its journey to the shelter.
 
-* USER STORY # 3
+#### USER STORY # 3
 
 >As a user interested in adopting pets, I want to have a way to clearly see the pet(s) that I can adopt so that I am not distracted by other pets that are not on the line for adoption
 >
@@ -66,7 +66,7 @@
 >
 >When I go to the adoption page I should be able to only see the pet that is next in line to be adopted. If there are other pets in line I could see them but I should not be able to adopt them other than the one next in line to be adopted.
 
-* USER STORY # 4
+####  USER STORY # 4
 
 >As a user interested in adopting pets, I want to know where I am on line so I know how long I have to wait
 >
@@ -74,7 +74,7 @@
 >
 >When I go to the adoption page, I should be able to see my place in line and anyone else who is in the line before me.I should not be able to start the adoption process unless its my turn.
 
-* USER STORY # 5
+#### USER STORY # 5
 
 >As a user interested in adopting pets, I want to be able to see the pets that are being adopted by other pet lovers and removed from the shelter so that I know that the pet I am interested in may no longer be available for adoption
 >
