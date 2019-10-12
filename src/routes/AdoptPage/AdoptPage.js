@@ -3,7 +3,7 @@ import React from 'react';
 import config from '../../config';
 import Cats from '../../components/Cats/Cats';
 import Dogs from '../../components/Dogs/Dogs';
-// import Users from '../../components/Users/Users';
+import Users from '../../components/Users/Users';
 import ApiService from '../../service/ApiService';
 import './AdoptPage.css'
 
@@ -135,8 +135,8 @@ export default class AdoptPage extends React.Component {
             cat={this.state.catNode.data}
           />
         )}
-          {/** {this.state.count >= 1 && <Users users={this.state.users} />}*/}
-        
+          {/** */}
+          {this.state.count >= 1 && <Users users={this.state.users} />}
 
         
         {this.state.dogNode !== null && (

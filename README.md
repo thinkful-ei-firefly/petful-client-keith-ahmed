@@ -1,68 +1,106 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/images/landingPage.png)
+# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/images/adoptPage.png)
 
-In the project directory, you can run:
+# Petful -- web Application
+### Team Keith & Ahmed
 
-### `npm start`
+> PETFUL is a simple pet-adoption (cats and dogs) management app
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [App Description](#app-description)
+- [Live Demo](#live-demo)
+- [Server-site repo](https://github.com/thinkful-ei-firefly/petful-server-keith-ahmed)
+- [User Story](#user-story)
+- [Built with](#build-with)
+- [Development](#development)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## App Description
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+<table>
+<tr>
+<td>
+  Petful allows user to adopt pets by putting their name on a que. They can only adopt a pet when it is their turn, and you can only adopt one dog or one cat at a time.
+</td>
+</tr>
+</table>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Live Demo
 
-### `npm run eject`
+> [Live Page](coming soon)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## User Stories
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+* USER STORY # 1
+> As a pet lover, I want to go to the FIFO pet adoption site so that I can get more information about the adoption process
+>
+> Acceptance criteria
+>
+> When I go to the FIFO adoption agency site
+>
+> The site has a description of the adoption process It has a meaningful picture that matches its description A button indicating that I can start the adoption process.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+* USER STORY # 2
+>As a user interested in adopting pets, I want to get more information on the pet so that I can make an informed decision
+>
+>Acceptance criteria
+>
+>When I go to the adoption page 
+>
+>I am provided the imformation of pet such as:
+>* an image of the pet;
+>* a physical description of the pet;
+>* its name, sex, age, and breed; and
+>* a story of its journey to the shelter.
 
-## Learn More
+* USER STORY # 3
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+>As a user interested in adopting pets, I want to have a way to clearly see the pet(s) that I can adopt so that I am not distracted by other pets that are not on the line for adoption
+>
+>Acceptance criteria
+>
+>When I go to the adoption page I should be able to only see the pet that is next in line to be adopted. If there are other pets in line I could see them but I should not be able to adopt them other than the one next in line to be adopted.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* USER STORY # 4
 
-### Code Splitting
+>As a user interested in adopting pets, I want to know where I am on line so I know how long I have to wait
+>
+>Acceptance criteria
+>
+>When I go to the adoption page, I should be able to see my place in line and anyone else who is in the line before me.I should not be able to start the adoption process unless its my turn.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+* USER STORY # 5
 
-### Analyzing the Bundle Size
+>As a user interested in adopting pets, I want to be able to see the pets that are being adopted by other pet lovers and removed from the shelter so that I know that the pet I am interested in may no longer be available for adoption
+>
+>Acceptance criteria
+>
+>When I go to the adoption page, 
+>
+>I should be able to see my place in line and anyone else who is in line before me. I should not be able to start the adoption process unless its my turn.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-### Making a Progressive Web App
+## Built with
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- Reactjs
+- vanilla CSS
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+## Development
 
-### Deployment
+Want to contribute? Great!
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+To fix a bug or enhance an existing module, follow these steps:
 
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
