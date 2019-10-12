@@ -3,3 +3,8 @@
     flex-grow:4;
     /* border: solid 1px black; */
 }
+.cat__img {
+    width: 250px;
+    height:250px ;
+    border-radius: 37px 0 37px 0px;
+}

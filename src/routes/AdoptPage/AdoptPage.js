@@ -103,22 +103,24 @@ export default class AdoptPage extends React.Component {
     }
   };
 
+
+
   render() {
     return (
       <div className='AdoptPage' >
         <header>
           <h1>Here are the pets for adoption</h1>
           {this.state.count < 1 && (
-            <p style={{color:'black',backgroundColor:'lightGreen',padding:10}}>There is no one in front of you </p>
+            <p style={{color:'black',backgroundColor:'lightGreen',padding:10,borderRadius:7,}}>There is no one in front of you </p>
           )}
 
           {(!this.state.catNode  && !this.state.dogNode) && (
-            <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0}} >Sorry we dont have any more pet for adoption, Thank you</p>
+            <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0,borderRadius:7,}} >Sorry we dont have any more pet for adoption, Thank you</p>
           )}
           
 
           {this.state.count >= 1 && (
-            <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0}} >There are {this.state.count} of users in front of you</p>
+            <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0,borderRadius:7,}} >There are {this.state.count} of users in front of you</p>
           )}
         </header>
         
@@ -151,10 +153,13 @@ export default class AdoptPage extends React.Component {
         
         
         </section>
-        
+
         {(this.state.catNode  && this.state.dogNode) && (
           <button style={{margin:10}} className='morePets__btn' onClick={() => this.handleSeeMore()}>See More pets</button>
           )}
+        
+
+         
 
       </div>
     );
