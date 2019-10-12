@@ -1,6 +1,7 @@
 import React from 'react'
 import ApiService from '../../service/ApiService'
 // import {Link} from 'react-router-dom';
+import './LandingPage.css'
 
 export default class LandingPage extends React.Component {
   handleSubmit = e => {
@@ -22,24 +23,26 @@ export default class LandingPage extends React.Component {
 
   render(){
     return(
-      <div>
+      <div className='LandingPage__body'>
         <header>
           <h1>
-            Welcome to <br></br>
-            Petful
+            Welcome to Petful
           </h1>
+
         </header>
-        <p>
-          To start the adoption , click the start button . <br></br>
-          You'll see cat and dog that are available for adoption.<br></br>
-          If you are first in line, you will the option to adopt either pet. <br></br>
-          You'll get their story.<br></br>
-          
-        </p>
-        <img style ={{width:'50%'}} src = {'https://picfiles.alphacoders.com/277/277517.jpg'} ></img>
-        <form onSubmit={e => this.handleSubmit(e)}><label htmlFor="Name">Name:</label> 
-        <input placeholder="e.g. John " name="name" id="name"></input>
-        <button type="submit">Start</button>
+        <h3>Adopt your new best friend!</h3>
+        <p className='LandingPage__p'>
+            Petful is your local neighborhood's dog and cat animal shelter. Adoption is
+            on a first come first serve basis, and you must enter the adoption queue before
+            you can take your new friend home.
+          </p>
+        <img className='LandingPage__image'  src = {'https://picfiles.alphacoders.com/277/277517.jpg'} ></img>
+        <form className='form' onSubmit={e => this.handleSubmit(e)}>
+        <input  name="name" id="name" autoComplete='off' type='text' required></input>
+        <label htmlFor="Name" className='label-name'>
+            <span className='content-name'>Enter Your Name</span>
+        </label> 
+        <button className='btn' type="submit">Start looking now </button>
         </form>
         
       </div>

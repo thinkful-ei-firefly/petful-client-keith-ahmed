@@ -1,0 +1,5 @@
+.Cats__body{
+    /* width: 40%; */
+    flex-grow:4;
+    /* border: solid 1px black; */
+}
