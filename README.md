@@ -1,12 +1,12 @@
 
-# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/images/landingPage.png)
-# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/images/adoptPage.png)
+# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/blob/master/images/landingPage.png?raw=true)
+
+# ![WebApp](https://github.com/thinkful-ei-firefly/petful-client-keith-ahmed/blob/master/images/adoptPage.png?raw=true)
 
 # Petful -- web Application
-### Team Keith & Ahmed
 
 > PETFUL is a simple pet-adoption (cats and dogs) management app
-
+### Team Keith & Ahmed
 ## Table of contents
 
 - [App Description](#app-description)
