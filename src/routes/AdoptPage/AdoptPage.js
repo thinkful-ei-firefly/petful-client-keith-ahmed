@@ -1,9 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import config from '../../config';
 import Cats from '../../components/Cats/Cats';
 import Dogs from '../../components/Dogs/Dogs';
-import Users from '../../components/Users/Users';
+// import Users from '../../components/Users/Users';
 import ApiService from '../../service/ApiService';
 import './AdoptPage.css'
 
@@ -95,7 +95,7 @@ export default class AdoptPage extends React.Component {
   }
 
   handleSeeMore = () => {
-    if (this.state.catNode.next && this.state.dogNode.next) {
+  if (this.state.catNode.next && this.state.dogNode.next) {
       this.setState({
         catNode: this.state.catNode.next,
         dogNode: this.state.dogNode.next
@@ -109,9 +109,14 @@ export default class AdoptPage extends React.Component {
         <header>
           <h1>Here are the pets for adoption</h1>
           {this.state.count < 1 && (
-            <p style={{color:'black',backgroundColor:'lightGreen',padding:10}}>There is no one in front of you <br></br> 
-            You can Adopt any pet from below</p>
+            <p style={{color:'black',backgroundColor:'lightGreen',padding:10}}>There is no one in front of you </p>
           )}
+
+          {(!this.state.catNode  && !this.state.dogNode) && (
+            <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0}} >Sorry we dont have any more pet for adoption, Thank you</p>
+          )}
+          
+
           {this.state.count >= 1 && (
             <p style={{color:'white',backgroundColor:'lightcoral',padding:10,textAlign:'center', marginBottom:0}} >There are {this.state.count} of users in front of you</p>
           )}
@@ -130,8 +135,8 @@ export default class AdoptPage extends React.Component {
             cat={this.state.catNode.data}
           />
         )}
-
-        {this.state.count >= 1 && <Users users={this.state.users} />}
+          {/** {this.state.count >= 1 && <Users users={this.state.users} />}*/}
+        
 
         
         {this.state.dogNode !== null && (
@@ -144,8 +149,12 @@ export default class AdoptPage extends React.Component {
           />
         )}
         
+        
         </section>
-        <button className='morePets__btn' onClick={() => this.handleSeeMore()}>See More pets</button>
+        
+        {(this.state.catNode  && this.state.dogNode) && (
+          <button style={{margin:10}} className='morePets__btn' onClick={() => this.handleSeeMore()}>See More pets</button>
+          )}
 
       </div>
     );

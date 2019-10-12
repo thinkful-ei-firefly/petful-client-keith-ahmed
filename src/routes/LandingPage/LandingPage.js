@@ -13,7 +13,7 @@ export default class LandingPage extends React.Component {
     window.localStorage.setItem("name", user)
     ApiService.handleUserPost(user)
     .then(user => {
-      console.log(user)
+      // console.log(user)
       this.props.history.push(`/adopt`)
     })
     .catch(error => {
@@ -36,7 +36,7 @@ export default class LandingPage extends React.Component {
             on a first come first serve basis, and you must enter the adoption queue before
             you can take your new friend home.
           </p>
-        <img className='LandingPage__image'  src = {'https://picfiles.alphacoders.com/277/277517.jpg'} ></img>
+        <img className='LandingPage__image' alt='dog and cat img' src = {'https://picfiles.alphacoders.com/277/277517.jpg'} ></img>
         <form className='form' onSubmit={e => this.handleSubmit(e)}>
         <input  name="name" id="name" autoComplete='off' type='text' required></input>
         <label htmlFor="Name" className='label-name'>

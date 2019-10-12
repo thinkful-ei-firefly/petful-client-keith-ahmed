@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { Route } from 'react-router-dom'
 import LandingPage from './routes/LandingPage/LandingPage'
 import AdoptPage from './routes/AdoptPage/AdoptPage'
