@@ -31,7 +31,7 @@
 
 ## Live Demo
 
-> [Live Page](coming soon)
+> [Live Page](https://petful-client-keith-ahmed.now.sh/ )
 
 
 ## User Stories
